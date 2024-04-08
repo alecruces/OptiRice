@@ -6,7 +6,7 @@ Semi-supervised learning is a technique that deals with data that has both label
 ##  Keywords
 Optimization Methods, Semi-Supervised Learning, Rice Seeds Classification
 ##  Data Rice Type Data Set
- Rice type classification (kaggle.com, Synthetic Data Set
+ Rice type classification (kaggle.com)
 ## Methods
 *	Gradient Descent
 *	BCGD randomized rule
