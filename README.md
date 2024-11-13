@@ -29,30 +29,30 @@ Optimization Methods, Semi-Supervised Learning, Rice Seeds Classification
 
 ---
 
-### 1. About the Project
+### About the Project
 
 This project explores semi-supervised learning using optimization methods for classifying rice seed types. We apply three optimization methods—Gradient Descent, Randomized Block Coordinate Gradient Descent (BCGD), and Gauss-Southwell BCGD—to both a synthetic dataset and a real-world rice seeds dataset. By minimizing an objective function, the study demonstrates how labeled data can guide label predictions for unlabeled instances, with performance measured in accuracy and computation time.
 
-### 2. Key Features
+### Key Features
 
 - **Semi-Supervised Learning**: Efficient label prediction for unlabeled data using a small set of labeled data.
 - **Optimization Techniques**: Implementation of three optimization methods with convergence analysis and performance comparison.
 - **Real-World Application**: Classification of rice seeds based on morphological attributes.
 
-### 3. Key Results
+### Key Results
 
 - **Convergence Behavior**: Gradient Descent converges in fewer iterations, while Gauss-Southwell BCGD is the fastest in terms of computational time.
 - **Accuracy**: Achieved approximately 70% accuracy on true labels for the real rice seeds dataset, indicating effective label assignment.
 - **Similarity Measure**: Exponential similarity (RBF kernel) yielded better performance compared to Euclidean distance for clustering.
 
-### 4. Data Overview
+### Data Overview
 
 This project utilizes a synthetic dataset and a real-world rice seed dataset:
 
 - **Rice Type Data Set**: [Rice Type Classification Dataset on Kaggle](https://www.kaggle.com/datasets/mssmartypants/rice-type-classification)  
   Contains attributes of rice grains, including area, perimeter, axis lengths, eccentricity, and convex area, used for classification between Jasmine and Gonen rice types.
 
-### 5. Methodology
+### Methodology
 
 The following optimization techniques were applied:
 
@@ -65,7 +65,7 @@ Additional methodology aspects include:
 - **Similarity Measures**: RBF kernel used for calculating similarity weights between data points.
 - **Stopping Criteria**: Convergence is determined by either a set iteration limit or the magnitude of the gradient.
 
-### 6. Screenshots and Graphs
+### Screenshots and Graphs
 
 1. **Distribution of Synthetic Data (Scatter Plot)**  
    Visualization of labeled and unlabeled points before applying the optimization methods.
@@ -111,15 +111,15 @@ Distribution of examples for the real data set after applying Gradient Descent a
 
    Loss as a function of iteration number (left) and as a function of CPU time (right) with time window of 10,000 ms.
 
-### 🛠️ Technologies Used
+### Technologies Used
 
-> Highlighting essential tools and libraries.
+> 🛠️ Highlighting essential tools and libraries.
 
 - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white): Main programming language.
 - **NumPy** and **Pandas**: Data manipulation and processing.
 - **Matplotlib**: Visualization of data distribution, accuracy, and loss trends.
 
-### 8. Setup & Installation
+### Setup & Installation
 
 Clone the repository and install dependencies to replicate the study:
 
@@ -134,3 +134,17 @@ cd OptiRice
 
 # Install dependencies
 pip install -r requirements.txt
+
+### Usage
+
+The repository includes the following files:
+
+- **`code.ipynb`**: Jupyter notebook with the complete workflow, from data loading to optimization and performance evaluation.
+- **`Report.pdf`**: Detailed report covering the methodology, convergence analysis, and findings.
+
+To run the project, open `code.ipynb` in Jupyter Notebook or view it on [nbviewer](https://nbviewer.org/github/alecruces/OptiRice/blob/main/code.ipynb).
+
+### Contributing
+
+Contributions are welcome! Please refer to the contributing guidelines for more details.
+
